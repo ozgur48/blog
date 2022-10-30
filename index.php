@@ -8,28 +8,47 @@
   <title>Blog</title>
 </head>
 <style>
-  body{background-color: powderblue;}
-  h1{color: #0f5132;}
-  .posts-link {
-    font-size:30px;
-    float: left;
+  body{
+    background-color: #fff;
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .navbar a {
+    display: block;
+    padding: 8px 10px;
+    background-color: transparent;
+    color: #B36307;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 24px;
+    font-size: 20px;
+  }
+  .navbar a:hover {
+    color: #8b4e09;
+    background: #ededed;
+    border-radius: 10px;
+    transition: all .5s ease;
   }
 </style>
 <body>
   <div>
-    <h1 style="color:MediumSeaGreen;">Bloğuma Hoşgeldiniz...</h1>
-    <p>
-      <a class="posts-link" href="posts.php">Bloğa Git</a>
-    </p>
+    <div class="navbar">
+      <a href="/blog">Anasayfa</a>
+      <a href="posts.php">Blog</a>
+      <a href="Portfolio.php">Portfolio</a>
+      <a href="contact.php">İletişim</a>
+      <a href="cms/login.php">Login</a>
+    </div>
     <style>
-      body{
-        background-image: url('background2.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 100% 100%;
-      }
+
     </style>
   </div>
   </div>
+
+  {{content}}
 </body>
 </html>
